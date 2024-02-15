@@ -1,0 +1,124 @@
+
+.body-mainlayout {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+.header-mainlayout {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    top: 0;
+}
+
+.footer-mainlayout {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+}
+
+.main-mainlayout {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+
+.maincontent-mainlayout {
+    display:flex;
+    justify-content:center;
+    height:auto;
+}
+
+.nav-button {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+    .nav-button a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+
+        .nav-button a:hover {
+            background-color: #555;
+        }
+
+@media screen and (max-width: 450px) {
+
+    .main-mainlayout {
+        padding-top: 10px;
+        padding-bottom: 55px;
+    }
+
+    .footer-mainlayout {
+        display: flex;
+    }
+
+    .header-mainlayout {
+        display: none;
+    }
+
+    .maincontent-mainlayout {
+        width: 99%;
+        background-color: lightslategrey;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 950px) {
+
+    .main-mainlayout {
+        padding-top: 55px;
+        padding-bottom: 10px;
+    }
+
+    .footer-mainlayout {
+        display: none;
+    }
+
+    .header-mainlayout {
+        display: flex;
+    }
+
+    .maincontent-mainlayout {
+        width: 99%;
+        background-color: darkslategray;
+    }
+}
+
+@media screen and (min-width: 951px) {
+
+    .main-mainlayout {
+        padding-top: 55px;
+        padding-bottom: 10px;
+    }
+
+    .footer-mainlayout {
+        display: none;
+    }
+
+    .header-mainlayout {
+        display: flex;
+    }
+
+    .maincontent-mainlayout {
+        width: 950px;
+        background-color: dimgray;
+    }
+}
